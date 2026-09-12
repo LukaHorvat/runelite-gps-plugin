@@ -21,7 +21,7 @@ import org.openjdk.jmh.annotations.Warmup;
  * to confirm it stays negligible next to the ~170 ms field build and the search.
  * <p>
  * The config load and field build run once per trial in {@link #setup()} and are NOT measured.
- * Run: {@code ./gradlew jmh --args='SearchHeuristicBenchmark'}
+ * Run: {@code ./gradlew -Pjmh jmh --args='SearchHeuristicBenchmark'}
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)

@@ -1262,3 +1262,36 @@ composition of its five views and one render that keeps them current, 169 lines 
 3,777 the series started at.
 
 **Suite:** 814 tests, all green.
+
+## Benchmarks that say what they measure (2026-09-12)
+
+The question was why the benchmarks were not working. They were running; three things made them
+look broken, and one of them measured the wrong thing.
+
+### Step B1: the documented command, the generate benchmark's cache axis, probe output (2026-09-12)
+
+**Red first:** none: build wiring and a JMH benchmark, neither under JUnit. The reproductions
+were the documented command failing (`Task 'jmh' not found in root project 'gps'`) and the
+generate numbers contradicting their own javadoc.
+
+**Change:**
+
+- Five of the eight benchmark javadocs said `./gradlew jmh --args=...` without the `-Pjmh`
+  property that defines the JMH source set (gated so the hub build never sees it). The lines now
+  carry the property, and the task exists without it too: a bare `./gradlew jmh` fails with the
+  gate explained instead of "task not found".
+- `GenerateBenchmark` claimed to measure a panel "find routes" click, field-build dominated at
+  hundreds of milliseconds, but measured 3 to 14 ms for most scenarios: one service per trial fed
+  the same query in a loop reuses the distance field since the cache of plan step N4, so it had
+  become a warm-regeneration benchmark without anyone deciding that. A `cache` axis makes both
+  explicit: `cold` builds a fresh service per invocation (the first click on a new target), `warm`
+  keeps one per trial (walking toward a pinned target).
+- The gated probes (`-Dgps.searchBench=true` and friends) print BENCH lines on stdout, which the
+  test task hid; they only ever reached the XML and HTML reports. A run that forwards any probe
+  flag now shows the tests' standard output. Scope such runs with `--tests`.
+
+**Measured** (JMH, one fork, short iterations, 10 routes): lumbridge-barrows cold 188 ms, warm
+14 ms; island cold 594 ms, warm 237 ms. The JMH fork runs on Gradle's JDK 21 while the client
+runs on 11, so absolute numbers come from a different JIT than production.
+
+**Suite:** 814 tests, all green.

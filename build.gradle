@@ -99,14 +99,20 @@ test {
     }
     // A hung generation latch used to block the build indefinitely.
     timeout = Duration.ofMinutes(20)
-    // Gated probes and dev data tools read -D flags; forward the recognised families.
+    // Gated probes and dev data tools read -D flags; forward the recognised families. A probe
+    // run also shows the tests' standard output: the probes report as BENCH/PROBE lines on
+    // stdout, which the default logging hides (they only ever reached the XML and HTML reports).
+    // Scope probe runs with --tests, or the whole suite's output comes along.
+    boolean probeRun = false
     System.properties.each { key, value ->
         String k = key.toString()
         if (k ==~ /^(gps|wikiLocations|collisionDiff|floors)\..*/
             || k in ['altarProbe', 'keldaProbe', 'karuulmPipeProbe', 'snapReport', 'snapFix', 'kebosMineProbe']) {
             systemProperty k, value
+            probeRun = true
         }
     }
+    testLogging.showStandardStreams = probeRun
 }
 
 jacoco {
@@ -220,6 +226,19 @@ if (project.hasProperty('jmh')) {
         description = 'Run JMH microbenchmarks (dev-only; enable with -Pjmh).'
         mainClass = 'org.openjdk.jmh.Main'
         classpath = sourceSets.jmh.runtimeClasspath
+    }
+} else {
+    // The task exists without the property too, so a bare `./gradlew jmh --args=...` explains the
+    // gate instead of failing with "Task 'jmh' not found". A JavaExec so that --args parses.
+    tasks.register('jmh', JavaExec) {
+        group = 'benchmark'
+        description = 'Run JMH microbenchmarks (dev-only; enable with -Pjmh).'
+        mainClass = 'org.openjdk.jmh.Main'
+        classpath = files()
+        doFirst {
+            throw new GradleException("The JMH benchmarks are gated behind -Pjmh: "
+                + "./gradlew -Pjmh jmh --args='GenerateBenchmark'")
+        }
     }
 }
 

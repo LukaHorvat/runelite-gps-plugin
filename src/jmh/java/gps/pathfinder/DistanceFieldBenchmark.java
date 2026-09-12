@@ -31,7 +31,7 @@ import gps.WorldPointUtil;
  * config) runs once per trial in {@link #setup()} and is NOT measured; only {@link DistanceField#build}
  * is timed. Returning the field lets JMH consume it so the JIT cannot elide the flood.
  * <p>
- * Run e.g.: {@code ./gradlew jmh --args='DistanceFieldBenchmark -f 1 -wi 3 -i 5'}
+ * Run e.g.: {@code ./gradlew -Pjmh jmh --args='DistanceFieldBenchmark -f 1 -wi 3 -i 5'}
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)

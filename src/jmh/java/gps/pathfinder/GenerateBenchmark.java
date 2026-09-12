@@ -35,9 +35,18 @@ import gps.TeleportMethod;
  * The generation is asynchronous (own executor + seed pool); the benchmark awaits the terminal
  * {@code done} update on a latch, so the measured wall time is the generation's. The client-thread
  * bounce is run inline via a mock. {@code maxRoutes = 1} is the primary-only path (panel hidden);
- * {@code 10} is a full page. Output in ms because a generation is field-build-dominated (~100s of ms).
+ * {@code 10} is a full page. Output in ms.
  * <p>
- * Run: {@code ./gradlew jmh --args='GenerateBenchmark'}
+ * The {@code cache} axis is the distance-field cache (plan step N4): a service reuses the field
+ * across generations with the same target set and usable transports, so one long-lived service
+ * fed the same query in a loop measures a WARM regeneration (the player walking toward a pinned
+ * target: one guided search per route, single-digit milliseconds), not a first click. That is
+ * what this benchmark silently became when the cache landed. {@code cold} builds a fresh service
+ * per invocation, so every generation floods its field (the first click on a new target, where
+ * the flood dominates); {@code warm} keeps one service per trial. The shared config's own caches
+ * stay warm in both, as they do in the plugin.
+ * <p>
+ * Run: {@code ./gradlew -Pjmh jmh --args='GenerateBenchmark'}
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
@@ -56,6 +65,12 @@ public class GenerateBenchmark
 	@Param({"1", "10"})
 	public int maxRoutes;
 
+	/** cold: a fresh service (empty field cache) per invocation; warm: one service per trial. */
+	@Param({"cold", "warm"})
+	public String cache;
+
+	private ClientThread clientThread;
+	private PathfinderConfig config;
 	private AlternativeRoutesService service;
 	private int start;
 	private Set<Integer> targets;
@@ -63,22 +78,49 @@ public class GenerateBenchmark
 	@Setup(Level.Trial)
 	public void setup()
 	{
-		ClientThread clientThread = Mockito.mock(ClientThread.class);
+		clientThread = Mockito.mock(ClientThread.class);
 		Mockito.doAnswer(invocation ->
 		{
 			((Runnable) invocation.getArgument(0)).run();
 			return null;
 		}).when(clientThread).invokeLater(any(Runnable.class));
 
-		service = new AlternativeRoutesService(clientThread, BenchScenarios.everythingConfig());
+		config = BenchScenarios.everythingConfig();
 		start = BenchScenarios.start(scenario);
 		targets = BenchScenarios.targets(scenario);
+		if ("warm".equals(cache))
+		{
+			service = new AlternativeRoutesService(clientThread, config);
+		}
+	}
+
+	/** Cold: every invocation starts from an empty field cache, the way a new target does. */
+	@Setup(Level.Invocation)
+	public void freshServiceWhenCold()
+	{
+		if ("cold".equals(cache))
+		{
+			service = new AlternativeRoutesService(clientThread, config);
+		}
+	}
+
+	@TearDown(Level.Invocation)
+	public void dropServiceWhenCold()
+	{
+		if ("cold".equals(cache))
+		{
+			service.shutdown();
+			service = null;
+		}
 	}
 
 	@TearDown(Level.Trial)
 	public void tearDown()
 	{
-		service.shutdown();
+		if (service != null)
+		{
+			service.shutdown();
+		}
 	}
 
 	@Benchmark

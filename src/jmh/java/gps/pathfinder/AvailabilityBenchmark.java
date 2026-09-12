@@ -21,7 +21,7 @@ import org.openjdk.jmh.annotations.Warmup;
  * PathfinderConfig#rebuildAvailabilityWithExclusions}: re-derive the usable lists for an exclusion
  * set from the base lists, no game-state reads).
  * <p>
- * Run: {@code ./gradlew jmh --args='AvailabilityBenchmark'}
+ * Run: {@code ./gradlew -Pjmh jmh --args='AvailabilityBenchmark'}
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)

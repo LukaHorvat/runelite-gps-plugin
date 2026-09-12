@@ -26,7 +26,7 @@ import org.openjdk.jmh.annotations.Warmup;
  * and runs it — that construction is part of a real per-route cost, so it is measured too. Returning
  * the result lets JMH consume it.
  * <p>
- * Run: {@code ./gradlew jmh --args='PathfinderBenchmark'}
+ * Run: {@code ./gradlew -Pjmh jmh --args='PathfinderBenchmark'}
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
