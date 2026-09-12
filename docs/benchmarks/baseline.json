@@ -1,0 +1,3791 @@
+[
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.SailingSeaBenchmark.seaTrackLeg",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 2,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 3,
+        "measurementTime" : "2 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 52.37597809047321,
+            "scoreError" : 12.39277315285089,
+            "scoreConfidence" : [
+                39.98320493762232,
+                64.7687512433241
+            ],
+            "scorePercentiles" : {
+                "0.0" : 51.817131707317074,
+                "50.0" : 52.17874358974359,
+                "90.0" : 53.132058974358976,
+                "95.0" : 53.132058974358976,
+                "99.0" : 53.132058974358976,
+                "99.9" : 53.132058974358976,
+                "99.99" : 53.132058974358976,
+                "99.999" : 53.132058974358976,
+                "99.9999" : 53.132058974358976,
+                "100.0" : 53.132058974358976
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    52.17874358974359,
+                    51.817131707317074,
+                    53.132058974358976
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.SailingSeaBenchmark.wetFloodCoastal",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 2,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 3,
+        "measurementTime" : "2 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 20.989769478168142,
+            "scoreError" : 3.0013944471243508,
+            "scoreConfidence" : [
+                17.98837503104379,
+                23.991163925292494
+            ],
+            "scorePercentiles" : {
+                "0.0" : 20.839611340206186,
+                "50.0" : 20.964076041666665,
+                "90.0" : 21.16562105263158,
+                "95.0" : 21.16562105263158,
+                "99.0" : 21.16562105263158,
+                "99.9" : 21.16562105263158,
+                "99.99" : 21.16562105263158,
+                "99.999" : 21.16562105263158,
+                "99.9999" : 21.16562105263158,
+                "100.0" : 21.16562105263158
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    20.964076041666665,
+                    20.839611340206186,
+                    21.16562105263158
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.SailingSeaBenchmark.wetFloodMidOcean",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 2,
+        "warmupTime" : "2 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 3,
+        "measurementTime" : "2 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 41.04270159183674,
+            "scoreError" : 17.414140310687145,
+            "scoreConfidence" : [
+                23.628561281149594,
+                58.456841902523884
+            ],
+            "scorePercentiles" : {
+                "0.0" : 40.143832,
+                "50.0" : 40.939734,
+                "90.0" : 42.044538775510205,
+                "95.0" : 42.044538775510205,
+                "99.0" : 42.044538775510205,
+                "99.9" : 42.044538775510205,
+                "99.99" : 42.044538775510205,
+                "99.999" : 42.044538775510205,
+                "99.9999" : 42.044538775510205,
+                "100.0" : 42.044538775510205
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    40.143832,
+                    42.044538775510205,
+                    40.939734
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.AvailabilityBenchmark.rebuildWithExclusion",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 229.9829478241283,
+            "scoreError" : 29.163279301092064,
+            "scoreConfidence" : [
+                200.81966852303623,
+                259.1462271252204
+            ],
+            "scorePercentiles" : {
+                "0.0" : 223.19907325684025,
+                "50.0" : 227.38911718220817,
+                "90.0" : 239.85355022559963,
+                "95.0" : 239.85355022559963,
+                "99.0" : 239.85355022559963,
+                "99.9" : 239.85355022559963,
+                "99.99" : 239.85355022559963,
+                "99.999" : 239.85355022559963,
+                "99.9999" : 239.85355022559963,
+                "100.0" : 239.85355022559963
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    236.0269347673603,
+                    227.38911718220817,
+                    223.19907325684025,
+                    223.44606368863336,
+                    239.85355022559963
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.AvailabilityBenchmark.refresh",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "primaryMetric" : {
+            "score" : 3658.5786682051003,
+            "scoreError" : 865.2911329920021,
+            "scoreConfidence" : [
+                2793.287535213098,
+                4523.869801197103
+            ],
+            "scorePercentiles" : {
+                "0.0" : 3418.964527027027,
+                "50.0" : 3556.6588028169012,
+                "90.0" : 3967.6976377952756,
+                "95.0" : 3967.6976377952756,
+                "99.0" : 3967.6976377952756,
+                "99.9" : 3967.6976377952756,
+                "99.99" : 3967.6976377952756,
+                "99.999" : 3967.6976377952756,
+                "99.9999" : 3967.6976377952756,
+                "100.0" : 3967.6976377952756
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    3536.761052631579,
+                    3556.6588028169012,
+                    3967.6976377952756,
+                    3812.811320754717,
+                    3418.964527027027
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.DistanceFieldBenchmark.build",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "costMultiple" : "0",
+            "scenario" : "single"
+        },
+        "primaryMetric" : {
+            "score" : 270662.245,
+            "scoreError" : 18902.96733892407,
+            "scoreConfidence" : [
+                251759.27766107593,
+                289565.21233892406
+            ],
+            "scorePercentiles" : {
+                "0.0" : 264723.175,
+                "50.0" : 269708.475,
+                "90.0" : 277751.95,
+                "95.0" : 277751.95,
+                "99.0" : 277751.95,
+                "99.9" : 277751.95,
+                "99.99" : 277751.95,
+                "99.999" : 277751.95,
+                "99.9999" : 277751.95,
+                "100.0" : 277751.95
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    268335.675,
+                    272791.95,
+                    264723.175,
+                    269708.475,
+                    277751.95
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.DistanceFieldBenchmark.build",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "costMultiple" : "0",
+            "scenario" : "multi"
+        },
+        "primaryMetric" : {
+            "score" : 274007.16500000004,
+            "scoreError" : 19605.69737299484,
+            "scoreConfidence" : [
+                254401.4676270052,
+                293612.8623729949
+            ],
+            "scorePercentiles" : {
+                "0.0" : 266497.225,
+                "50.0" : 274146.775,
+                "90.0" : 280756.075,
+                "95.0" : 280756.075,
+                "99.0" : 280756.075,
+                "99.9" : 280756.075,
+                "99.99" : 280756.075,
+                "99.999" : 280756.075,
+                "99.9999" : 280756.075,
+                "100.0" : 280756.075
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    274146.775,
+                    275194.075,
+                    280756.075,
+                    273441.675,
+                    266497.225
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.DistanceFieldBenchmark.build",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "costMultiple" : "3",
+            "scenario" : "single"
+        },
+        "primaryMetric" : {
+            "score" : 8839.887769262661,
+            "scoreError" : 668.823625947786,
+            "scoreConfidence" : [
+                8171.064143314875,
+                9508.711395210446
+            ],
+            "scorePercentiles" : {
+                "0.0" : 8667.647863247863,
+                "50.0" : 8845.32807017544,
+                "90.0" : 9082.116216216216,
+                "95.0" : 9082.116216216216,
+                "99.0" : 9082.116216216216,
+                "99.9" : 9082.116216216216,
+                "99.99" : 9082.116216216216,
+                "99.999" : 9082.116216216216,
+                "99.9999" : 9082.116216216216,
+                "100.0" : 9082.116216216216
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    8923.538938053098,
+                    8680.80775862069,
+                    8667.647863247863,
+                    8845.32807017544,
+                    9082.116216216216
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.DistanceFieldBenchmark.build",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "costMultiple" : "3",
+            "scenario" : "multi"
+        },
+        "primaryMetric" : {
+            "score" : 26689.467949447426,
+            "scoreError" : 1549.631521218579,
+            "scoreConfidence" : [
+                25139.836428228846,
+                28239.099470666006
+            ],
+            "scorePercentiles" : {
+                "0.0" : 26111.666666666668,
+                "50.0" : 26645.82564102564,
+                "90.0" : 27135.902702702704,
+                "95.0" : 27135.902702702704,
+                "99.0" : 27135.902702702704,
+                "99.9" : 27135.902702702704,
+                "99.99" : 27135.902702702704,
+                "99.999" : 27135.902702702704,
+                "99.9999" : 27135.902702702704,
+                "100.0" : 27135.902702702704
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    26645.82564102564,
+                    26556.25,
+                    27135.902702702704,
+                    26111.666666666668,
+                    26997.694736842106
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 354.8357533333334,
+            "scoreError" : 7.299987297818757,
+            "scoreConfidence" : [
+                347.53576603551465,
+                362.13574063115215
+            ],
+            "scorePercentiles" : {
+                "0.0" : 352.41616666666664,
+                "50.0" : 354.2832,
+                "90.0" : 357.50763333333333,
+                "95.0" : 357.50763333333333,
+                "99.0" : 357.50763333333333,
+                "99.9" : 357.50763333333333,
+                "99.99" : 357.50763333333333,
+                "99.999" : 357.50763333333333,
+                "99.9999" : 357.50763333333333,
+                "100.0" : 357.50763333333333
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    354.2832,
+                    357.50763333333333,
+                    354.2674666666667,
+                    352.41616666666664,
+                    355.7043
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 312.61968,
+            "scoreError" : 14.02320568489852,
+            "scoreConfidence" : [
+                298.5964743151015,
+                326.64288568489854
+            ],
+            "scorePercentiles" : {
+                "0.0" : 308.005875,
+                "50.0" : 312.27975,
+                "90.0" : 317.5235,
+                "95.0" : 317.5235,
+                "99.0" : 317.5235,
+                "99.9" : 317.5235,
+                "99.99" : 317.5235,
+                "99.999" : 317.5235,
+                "99.9999" : 317.5235,
+                "100.0" : 317.5235
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    314.59385,
+                    312.27975,
+                    310.695425,
+                    317.5235,
+                    308.005875
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 98.44229890909091,
+            "scoreError" : 5.522585969824304,
+            "scoreConfidence" : [
+                92.9197129392666,
+                103.96488487891521
+            ],
+            "scorePercentiles" : {
+                "0.0" : 97.24968181818181,
+                "50.0" : 98.0365909090909,
+                "90.0" : 100.77074,
+                "95.0" : 100.77074,
+                "99.0" : 100.77074,
+                "99.9" : 100.77074,
+                "99.99" : 100.77074,
+                "99.999" : 100.77074,
+                "99.9999" : 100.77074,
+                "100.0" : 100.77074
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    98.0365909090909,
+                    97.24968181818181,
+                    97.3871,
+                    98.76738181818182,
+                    100.77074
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 601.83765,
+            "scoreError" : 29.656212112444635,
+            "scoreConfidence" : [
+                572.1814378875554,
+                631.4938621124447
+            ],
+            "scorePercentiles" : {
+                "0.0" : 590.39275,
+                "50.0" : 605.0875,
+                "90.0" : 608.7976,
+                "95.0" : 608.7976,
+                "99.0" : 608.7976,
+                "99.9" : 608.7976,
+                "99.99" : 608.7976,
+                "99.999" : 608.7976,
+                "99.9999" : 608.7976,
+                "100.0" : 608.7976
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    605.0875,
+                    597.6329,
+                    608.7976,
+                    590.39275,
+                    607.2775
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 355.45238,
+            "scoreError" : 10.485840815569613,
+            "scoreConfidence" : [
+                344.9665391844304,
+                365.9382208155696
+            ],
+            "scorePercentiles" : {
+                "0.0" : 351.99306666666666,
+                "50.0" : 354.61513333333335,
+                "90.0" : 359.19603333333333,
+                "95.0" : 359.19603333333333,
+                "99.0" : 359.19603333333333,
+                "99.9" : 359.19603333333333,
+                "99.99" : 359.19603333333333,
+                "99.999" : 359.19603333333333,
+                "99.9999" : 359.19603333333333,
+                "100.0" : 359.19603333333333
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    354.5400666666667,
+                    354.61513333333335,
+                    359.19603333333333,
+                    351.99306666666666,
+                    356.9176
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 815.57029,
+            "scoreError" : 28.802751392014578,
+            "scoreConfidence" : [
+                786.7675386079854,
+                844.3730413920146
+            ],
+            "scorePercentiles" : {
+                "0.0" : 804.17345,
+                "50.0" : 817.3036,
+                "90.0" : 823.85215,
+                "95.0" : 823.85215,
+                "99.0" : 823.85215,
+                "99.9" : 823.85215,
+                "99.99" : 823.85215,
+                "99.999" : 823.85215,
+                "99.9999" : 823.85215,
+                "100.0" : 823.85215
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    819.5295,
+                    823.85215,
+                    812.99275,
+                    804.17345,
+                    817.3036
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "nearest-bank"
+        },
+        "primaryMetric" : {
+            "score" : 1045.13203,
+            "scoreError" : 83.69318998667416,
+            "scoreConfidence" : [
+                961.4388400133258,
+                1128.8252199866743
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1016.21535,
+                "50.0" : 1042.7167,
+                "90.0" : 1077.0895,
+                "95.0" : 1077.0895,
+                "99.0" : 1077.0895,
+                "99.9" : 1077.0895,
+                "99.99" : 1077.0895,
+                "99.999" : 1077.0895,
+                "99.9999" : 1077.0895,
+                "100.0" : 1077.0895
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1041.2046,
+                    1042.7167,
+                    1077.0895,
+                    1048.434,
+                    1016.21535
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "bank-and-back"
+        },
+        "primaryMetric" : {
+            "score" : 1386.38966,
+            "scoreError" : 111.47925269995538,
+            "scoreConfidence" : [
+                1274.9104073000447,
+                1497.8689126999554
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1358.5503,
+                "50.0" : 1371.361,
+                "90.0" : 1421.6419,
+                "95.0" : 1421.6419,
+                "99.0" : 1421.6419,
+                "99.9" : 1421.6419,
+                "99.99" : 1421.6419,
+                "99.999" : 1421.6419,
+                "99.9999" : 1421.6419,
+                "100.0" : 1421.6419
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1413.4353,
+                    1421.6419,
+                    1366.9598,
+                    1371.361,
+                    1358.5503
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "water-pin"
+        },
+        "primaryMetric" : {
+            "score" : 412.31718666666666,
+            "scoreError" : 14.6739986012965,
+            "scoreConfidence" : [
+                397.64318806537017,
+                426.99118526796315
+            ],
+            "scorePercentiles" : {
+                "0.0" : 406.477,
+                "50.0" : 412.30216666666666,
+                "90.0" : 417.0428,
+                "95.0" : 417.0428,
+                "99.0" : 417.0428,
+                "99.9" : 417.0428,
+                "99.99" : 417.0428,
+                "99.999" : 417.0428,
+                "99.9999" : 417.0428,
+                "100.0" : 417.0428
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    412.30216666666666,
+                    412.1709666666667,
+                    406.477,
+                    417.0428,
+                    413.593
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "owned",
+            "scenario" : "sealed"
+        },
+        "primaryMetric" : {
+            "score" : 707.89089,
+            "scoreError" : 37.07742927350107,
+            "scoreConfidence" : [
+                670.813460726499,
+                744.968319273501
+            ],
+            "scorePercentiles" : {
+                "0.0" : 698.27165,
+                "50.0" : 702.6798,
+                "90.0" : 718.93765,
+                "95.0" : 718.93765,
+                "99.0" : 718.93765,
+                "99.9" : 718.93765,
+                "99.99" : 718.93765,
+                "99.999" : 718.93765,
+                "99.9999" : 718.93765,
+                "100.0" : 718.93765
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    718.93765,
+                    717.59255,
+                    702.6798,
+                    698.27165,
+                    701.9728
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 354.3481066666667,
+            "scoreError" : 12.352623700263699,
+            "scoreConfidence" : [
+                341.995482966403,
+                366.7007303669304
+            ],
+            "scorePercentiles" : {
+                "0.0" : 350.8003,
+                "50.0" : 354.8713,
+                "90.0" : 358.27576666666664,
+                "95.0" : 358.27576666666664,
+                "99.0" : 358.27576666666664,
+                "99.9" : 358.27576666666664,
+                "99.99" : 358.27576666666664,
+                "99.999" : 358.27576666666664,
+                "99.9999" : 358.27576666666664,
+                "100.0" : 358.27576666666664
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    358.27576666666664,
+                    351.39973333333336,
+                    350.8003,
+                    356.39343333333335,
+                    354.8713
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 318.227275,
+            "scoreError" : 29.32710728604958,
+            "scoreConfidence" : [
+                288.90016771395045,
+                347.5543822860496
+            ],
+            "scorePercentiles" : {
+                "0.0" : 310.619025,
+                "50.0" : 316.143075,
+                "90.0" : 330.88825,
+                "95.0" : 330.88825,
+                "99.0" : 330.88825,
+                "99.9" : 330.88825,
+                "99.99" : 330.88825,
+                "99.999" : 330.88825,
+                "99.9999" : 330.88825,
+                "100.0" : 330.88825
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    330.88825,
+                    315.148075,
+                    318.33795,
+                    310.619025,
+                    316.143075
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 101.55859672727271,
+            "scoreError" : 4.850991929068057,
+            "scoreConfidence" : [
+                96.70760479820466,
+                106.40958865634077
+            ],
+            "scorePercentiles" : {
+                "0.0" : 99.96256363636364,
+                "50.0" : 101.4102,
+                "90.0" : 103.19219,
+                "95.0" : 103.19219,
+                "99.0" : 103.19219,
+                "99.9" : 103.19219,
+                "99.99" : 103.19219,
+                "99.999" : 103.19219,
+                "99.9999" : 103.19219,
+                "100.0" : 103.19219
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    103.19219,
+                    100.871,
+                    99.96256363636364,
+                    102.35703,
+                    101.4102
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 624.60679,
+            "scoreError" : 64.00136963642838,
+            "scoreConfidence" : [
+                560.6054203635716,
+                688.6081596364285
+            ],
+            "scorePercentiles" : {
+                "0.0" : 606.9056,
+                "50.0" : 628.54925,
+                "90.0" : 648.04485,
+                "95.0" : 648.04485,
+                "99.0" : 648.04485,
+                "99.9" : 648.04485,
+                "99.99" : 648.04485,
+                "99.999" : 648.04485,
+                "99.9999" : 648.04485,
+                "100.0" : 648.04485
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    610.2813,
+                    628.54925,
+                    606.9056,
+                    648.04485,
+                    629.25295
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 362.00696,
+            "scoreError" : 17.618624489889694,
+            "scoreConfidence" : [
+                344.3883355101103,
+                379.62558448988966
+            ],
+            "scorePercentiles" : {
+                "0.0" : 354.40636666666666,
+                "50.0" : 364.5894333333333,
+                "90.0" : 365.3285,
+                "95.0" : 365.3285,
+                "99.0" : 365.3285,
+                "99.9" : 365.3285,
+                "99.99" : 365.3285,
+                "99.999" : 365.3285,
+                "99.9999" : 365.3285,
+                "100.0" : 365.3285
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    364.5894333333333,
+                    365.3285,
+                    364.7033333333333,
+                    361.00716666666665,
+                    354.40636666666666
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 852.80553,
+            "scoreError" : 19.21850161744915,
+            "scoreConfidence" : [
+                833.5870283825508,
+                872.0240316174492
+            ],
+            "scorePercentiles" : {
+                "0.0" : 847.97435,
+                "50.0" : 852.2925,
+                "90.0" : 859.9869,
+                "95.0" : 859.9869,
+                "99.0" : 859.9869,
+                "99.9" : 859.9869,
+                "99.99" : 859.9869,
+                "99.999" : 859.9869,
+                "99.9999" : 859.9869,
+                "100.0" : 859.9869
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    855.2616,
+                    852.2925,
+                    847.97435,
+                    859.9869,
+                    848.5123
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "nearest-bank"
+        },
+        "primaryMetric" : {
+            "score" : 1047.7766000000001,
+            "scoreError" : 119.85246495901882,
+            "scoreConfidence" : [
+                927.9241350409814,
+                1167.629064959019
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1018.0686,
+                "50.0" : 1042.7469,
+                "90.0" : 1096.6786,
+                "95.0" : 1096.6786,
+                "99.0" : 1096.6786,
+                "99.9" : 1096.6786,
+                "99.99" : 1096.6786,
+                "99.999" : 1096.6786,
+                "99.9999" : 1096.6786,
+                "100.0" : 1096.6786
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1025.2744,
+                    1056.1145,
+                    1018.0686,
+                    1042.7469,
+                    1096.6786
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "bank-and-back"
+        },
+        "primaryMetric" : {
+            "score" : 1322.9985199999999,
+            "scoreError" : 116.08410016572796,
+            "scoreConfidence" : [
+                1206.914419834272,
+                1439.0826201657278
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1296.0029,
+                "50.0" : 1320.1351,
+                "90.0" : 1373.67,
+                "95.0" : 1373.67,
+                "99.0" : 1373.67,
+                "99.9" : 1373.67,
+                "99.99" : 1373.67,
+                "99.999" : 1373.67,
+                "99.9999" : 1373.67,
+                "100.0" : 1373.67
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1320.147,
+                    1373.67,
+                    1296.0029,
+                    1305.0376,
+                    1320.1351
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "water-pin"
+        },
+        "primaryMetric" : {
+            "score" : 405.92773333333326,
+            "scoreError" : 18.85516352415766,
+            "scoreConfidence" : [
+                387.0725698091756,
+                424.7828968574909
+            ],
+            "scorePercentiles" : {
+                "0.0" : 401.4381333333333,
+                "50.0" : 403.7037,
+                "90.0" : 411.34596666666664,
+                "95.0" : 411.34596666666664,
+                "99.0" : 411.34596666666664,
+                "99.9" : 411.34596666666664,
+                "99.99" : 411.34596666666664,
+                "99.999" : 411.34596666666664,
+                "99.9999" : 411.34596666666664,
+                "100.0" : 411.34596666666664
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    403.7037,
+                    401.4381333333333,
+                    411.34596666666664,
+                    402.0694,
+                    411.08146666666664
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "cold",
+            "mode" : "everything",
+            "scenario" : "sealed"
+        },
+        "primaryMetric" : {
+            "score" : 710.10394,
+            "scoreError" : 50.168714764870806,
+            "scoreConfidence" : [
+                659.9352252351291,
+                760.2726547648708
+            ],
+            "scorePercentiles" : {
+                "0.0" : 696.0331,
+                "50.0" : 706.7213,
+                "90.0" : 731.15725,
+                "95.0" : 731.15725,
+                "99.0" : 731.15725,
+                "99.9" : 731.15725,
+                "99.99" : 731.15725,
+                "99.999" : 731.15725,
+                "99.9999" : 731.15725,
+                "100.0" : 731.15725
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    731.15725,
+                    705.1551,
+                    706.7213,
+                    711.45295,
+                    696.0331
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 70.78118266666668,
+            "scoreError" : 3.78890174569378,
+            "scoreConfidence" : [
+                66.9922809209729,
+                74.57008441236046
+            ],
+            "scorePercentiles" : {
+                "0.0" : 69.33446666666667,
+                "50.0" : 70.76938666666666,
+                "90.0" : 71.69667333333334,
+                "95.0" : 71.69667333333334,
+                "99.0" : 71.69667333333334,
+                "99.9" : 71.69667333333334,
+                "99.99" : 71.69667333333334,
+                "99.999" : 71.69667333333334,
+                "99.9999" : 71.69667333333334,
+                "100.0" : 71.69667333333334
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    70.76938666666666,
+                    69.33446666666667,
+                    70.42258666666666,
+                    71.6828,
+                    71.69667333333334
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 16.259209416222312,
+            "scoreError" : 1.2567464519064422,
+            "scoreConfidence" : [
+                15.00246296431587,
+                17.515955868128753
+            ],
+            "scorePercentiles" : {
+                "0.0" : 15.8631453125,
+                "50.0" : 16.257914285714286,
+                "90.0" : 16.722254098360654,
+                "95.0" : 16.722254098360654,
+                "99.0" : 16.722254098360654,
+                "99.9" : 16.722254098360654,
+                "99.99" : 16.722254098360654,
+                "99.999" : 16.722254098360654,
+                "99.9999" : 16.722254098360654,
+                "100.0" : 16.722254098360654
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    16.257914285714286,
+                    16.722254098360654,
+                    15.8631453125,
+                    16.388603225806452,
+                    16.06413015873016
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 24.444959192961512,
+            "scoreError" : 4.349143514547282,
+            "scoreConfidence" : [
+                20.09581567841423,
+                28.794102707508795
+            ],
+            "scorePercentiles" : {
+                "0.0" : 23.29878409090909,
+                "50.0" : 24.577151219512196,
+                "90.0" : 25.92328205128205,
+                "95.0" : 25.92328205128205,
+                "99.0" : 25.92328205128205,
+                "99.9" : 25.92328205128205,
+                "99.99" : 25.92328205128205,
+                "99.999" : 25.92328205128205,
+                "99.9999" : 25.92328205128205,
+                "100.0" : 25.92328205128205
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    23.29878409090909,
+                    23.353059090909092,
+                    25.92328205128205,
+                    25.07251951219512,
+                    24.577151219512196
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 300.606275,
+            "scoreError" : 5.834512325915615,
+            "scoreConfidence" : [
+                294.77176267408436,
+                306.4407873259156
+            ],
+            "scorePercentiles" : {
+                "0.0" : 299.007025,
+                "50.0" : 300.7186,
+                "90.0" : 302.7074,
+                "95.0" : 302.7074,
+                "99.0" : 302.7074,
+                "99.9" : 302.7074,
+                "99.99" : 302.7074,
+                "99.999" : 302.7074,
+                "99.9999" : 302.7074,
+                "100.0" : 302.7074
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    302.7074,
+                    301.301625,
+                    300.7186,
+                    299.296725,
+                    299.007025
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 73.75485285714286,
+            "scoreError" : 5.4525330528947045,
+            "scoreConfidence" : [
+                68.30231980424816,
+                79.20738591003757
+            ],
+            "scorePercentiles" : {
+                "0.0" : 72.78007142857143,
+                "50.0" : 73.32487857142857,
+                "90.0" : 76.24255,
+                "95.0" : 76.24255,
+                "99.0" : 76.24255,
+                "99.9" : 76.24255,
+                "99.99" : 76.24255,
+                "99.999" : 76.24255,
+                "99.9999" : 76.24255,
+                "100.0" : 76.24255
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    73.32487857142857,
+                    72.78007142857143,
+                    73.44810714285714,
+                    72.97865714285714,
+                    76.24255
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 697.2863,
+            "scoreError" : 56.11307930626537,
+            "scoreConfidence" : [
+                641.1732206937346,
+                753.3993793062654
+            ],
+            "scorePercentiles" : {
+                "0.0" : 680.25885,
+                "50.0" : 704.28105,
+                "90.0" : 713.0873,
+                "95.0" : 713.0873,
+                "99.0" : 713.0873,
+                "99.9" : 713.0873,
+                "99.99" : 713.0873,
+                "99.999" : 713.0873,
+                "99.9999" : 713.0873,
+                "100.0" : 713.0873
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    705.45315,
+                    680.25885,
+                    683.35115,
+                    704.28105,
+                    713.0873
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "nearest-bank"
+        },
+        "primaryMetric" : {
+            "score" : 757.18683,
+            "scoreError" : 48.44931987409986,
+            "scoreConfidence" : [
+                708.7375101259001,
+                805.6361498740998
+            ],
+            "scorePercentiles" : {
+                "0.0" : 746.4712,
+                "50.0" : 752.30975,
+                "90.0" : 778.51535,
+                "95.0" : 778.51535,
+                "99.0" : 778.51535,
+                "99.9" : 778.51535,
+                "99.99" : 778.51535,
+                "99.999" : 778.51535,
+                "99.9999" : 778.51535,
+                "100.0" : 778.51535
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    757.73025,
+                    746.4712,
+                    778.51535,
+                    752.30975,
+                    750.9076
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "bank-and-back"
+        },
+        "primaryMetric" : {
+            "score" : 1056.78364,
+            "scoreError" : 106.0862747758726,
+            "scoreConfidence" : [
+                950.6973652241275,
+                1162.8699147758728
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1026.523,
+                "50.0" : 1067.4888,
+                "90.0" : 1084.3311,
+                "95.0" : 1084.3311,
+                "99.0" : 1084.3311,
+                "99.9" : 1084.3311,
+                "99.99" : 1084.3311,
+                "99.999" : 1084.3311,
+                "99.9999" : 1084.3311,
+                "100.0" : 1084.3311
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1084.3311,
+                    1067.4888,
+                    1077.4348,
+                    1028.1405,
+                    1026.523
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "water-pin"
+        },
+        "primaryMetric" : {
+            "score" : 103.890102,
+            "scoreError" : 1.7717210064019726,
+            "scoreConfidence" : [
+                102.11838099359802,
+                105.66182300640197
+            ],
+            "scorePercentiles" : {
+                "0.0" : 103.46697,
+                "50.0" : 103.63917,
+                "90.0" : 104.55332,
+                "95.0" : 104.55332,
+                "99.0" : 104.55332,
+                "99.9" : 104.55332,
+                "99.99" : 104.55332,
+                "99.999" : 104.55332,
+                "99.9999" : 104.55332,
+                "100.0" : 104.55332
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    104.55332,
+                    104.18265,
+                    103.63917,
+                    103.46697,
+                    103.6084
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "owned",
+            "scenario" : "sealed"
+        },
+        "primaryMetric" : {
+            "score" : 720.2272300000001,
+            "scoreError" : 94.37270849753119,
+            "scoreConfidence" : [
+                625.8545215024689,
+                814.5999384975313
+            ],
+            "scorePercentiles" : {
+                "0.0" : 699.31845,
+                "50.0" : 705.07635,
+                "90.0" : 753.12615,
+                "95.0" : 753.12615,
+                "99.0" : 753.12615,
+                "99.9" : 753.12615,
+                "99.99" : 753.12615,
+                "99.999" : 753.12615,
+                "99.9999" : 753.12615,
+                "100.0" : 753.12615
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    739.81545,
+                    753.12615,
+                    703.79975,
+                    705.07635,
+                    699.31845
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 73.96000361904763,
+            "scoreError" : 10.992500937529435,
+            "scoreConfidence" : [
+                62.96750268151819,
+                84.95250455657705
+            ],
+            "scorePercentiles" : {
+                "0.0" : 71.09402666666666,
+                "50.0" : 72.42528571428572,
+                "90.0" : 77.22975714285714,
+                "95.0" : 77.22975714285714,
+                "99.0" : 77.22975714285714,
+                "99.9" : 77.22975714285714,
+                "99.99" : 77.22975714285714,
+                "99.999" : 77.22975714285714,
+                "99.9999" : 77.22975714285714,
+                "100.0" : 77.22975714285714
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    77.22975714285714,
+                    71.09402666666666,
+                    72.21272,
+                    76.83822857142857,
+                    72.42528571428572
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 16.598404714613082,
+            "scoreError" : 0.7069959928795653,
+            "scoreConfidence" : [
+                15.891408721733516,
+                17.305400707492648
+            ],
+            "scorePercentiles" : {
+                "0.0" : 16.335374193548386,
+                "50.0" : 16.65015081967213,
+                "90.0" : 16.827976666666668,
+                "95.0" : 16.827976666666668,
+                "99.0" : 16.827976666666668,
+                "99.9" : 16.827976666666668,
+                "99.99" : 16.827976666666668,
+                "99.999" : 16.827976666666668,
+                "99.9999" : 16.827976666666668,
+                "100.0" : 16.827976666666668
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    16.66035737704918,
+                    16.827976666666668,
+                    16.518164516129033,
+                    16.335374193548386,
+                    16.65015081967213
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 26.082308171488755,
+            "scoreError" : 2.7662605630406114,
+            "scoreConfidence" : [
+                23.316047608448145,
+                28.848568734529366
+            ],
+            "scorePercentiles" : {
+                "0.0" : 25.05589512195122,
+                "50.0" : 26.246320512820514,
+                "90.0" : 26.886373684210525,
+                "95.0" : 26.886373684210525,
+                "99.0" : 26.886373684210525,
+                "99.9" : 26.886373684210525,
+                "99.99" : 26.886373684210525,
+                "99.999" : 26.886373684210525,
+                "99.9999" : 26.886373684210525,
+                "100.0" : 26.886373684210525
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    25.70179,
+                    25.05589512195122,
+                    26.246320512820514,
+                    26.886373684210525,
+                    26.521161538461538
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 307.65006000000005,
+            "scoreError" : 32.1403799392966,
+            "scoreConfidence" : [
+                275.50968006070343,
+                339.7904399392967
+            ],
+            "scorePercentiles" : {
+                "0.0" : 295.356,
+                "50.0" : 309.7144,
+                "90.0" : 317.626525,
+                "95.0" : 317.626525,
+                "99.0" : 317.626525,
+                "99.9" : 317.626525,
+                "99.99" : 317.626525,
+                "99.999" : 317.626525,
+                "99.9999" : 317.626525,
+                "100.0" : 317.626525
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    311.2195,
+                    304.333875,
+                    309.7144,
+                    295.356,
+                    317.626525
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 77.85819406593407,
+            "scoreError" : 3.258322775526495,
+            "scoreConfidence" : [
+                74.59987129040758,
+                81.11651684146057
+            ],
+            "scorePercentiles" : {
+                "0.0" : 76.97462142857142,
+                "50.0" : 77.58441538461538,
+                "90.0" : 78.94426923076924,
+                "95.0" : 78.94426923076924,
+                "99.0" : 78.94426923076924,
+                "99.9" : 78.94426923076924,
+                "99.99" : 78.94426923076924,
+                "99.999" : 78.94426923076924,
+                "99.9999" : 78.94426923076924,
+                "100.0" : 78.94426923076924
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    77.58441538461538,
+                    77.25106428571429,
+                    76.97462142857142,
+                    78.94426923076924,
+                    78.5366
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 711.20631,
+            "scoreError" : 35.07697244753639,
+            "scoreConfidence" : [
+                676.1293375524637,
+                746.2832824475364
+            ],
+            "scorePercentiles" : {
+                "0.0" : 704.31615,
+                "50.0" : 708.70915,
+                "90.0" : 727.07505,
+                "95.0" : 727.07505,
+                "99.0" : 727.07505,
+                "99.9" : 727.07505,
+                "99.99" : 727.07505,
+                "99.999" : 727.07505,
+                "99.9999" : 727.07505,
+                "100.0" : 727.07505
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    727.07505,
+                    709.6075,
+                    704.31615,
+                    708.70915,
+                    706.3237
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "nearest-bank"
+        },
+        "primaryMetric" : {
+            "score" : 773.63871,
+            "scoreError" : 81.55859077137087,
+            "scoreConfidence" : [
+                692.0801192286291,
+                855.1973007713708
+            ],
+            "scorePercentiles" : {
+                "0.0" : 741.43435,
+                "50.0" : 775.76675,
+                "90.0" : 797.61855,
+                "95.0" : 797.61855,
+                "99.0" : 797.61855,
+                "99.9" : 797.61855,
+                "99.99" : 797.61855,
+                "99.999" : 797.61855,
+                "99.9999" : 797.61855,
+                "100.0" : 797.61855
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    767.76535,
+                    741.43435,
+                    785.60855,
+                    775.76675,
+                    797.61855
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "bank-and-back"
+        },
+        "primaryMetric" : {
+            "score" : 1060.44884,
+            "scoreError" : 79.13447106049583,
+            "scoreConfidence" : [
+                981.3143689395042,
+                1139.5833110604958
+            ],
+            "scorePercentiles" : {
+                "0.0" : 1040.3083,
+                "50.0" : 1051.2267,
+                "90.0" : 1086.4952,
+                "95.0" : 1086.4952,
+                "99.0" : 1086.4952,
+                "99.9" : 1086.4952,
+                "99.99" : 1086.4952,
+                "99.999" : 1086.4952,
+                "99.9999" : 1086.4952,
+                "100.0" : 1086.4952
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    1078.1502,
+                    1086.4952,
+                    1046.0638,
+                    1040.3083,
+                    1051.2267
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "water-pin"
+        },
+        "primaryMetric" : {
+            "score" : 110.26757733333334,
+            "scoreError" : 9.03650929224331,
+            "scoreConfidence" : [
+                101.23106804109003,
+                119.30408662557664
+            ],
+            "scorePercentiles" : {
+                "0.0" : 107.65835,
+                "50.0" : 109.70145,
+                "90.0" : 113.95016666666666,
+                "95.0" : 113.95016666666666,
+                "99.0" : 113.95016666666666,
+                "99.9" : 113.95016666666666,
+                "99.99" : 113.95016666666666,
+                "99.999" : 113.95016666666666,
+                "99.9999" : 113.95016666666666,
+                "100.0" : 113.95016666666666
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    113.95016666666666,
+                    109.70145,
+                    109.23604,
+                    110.79188,
+                    107.65835
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.GenerateBenchmark.generate",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "cache" : "warm",
+            "mode" : "everything",
+            "scenario" : "sealed"
+        },
+        "primaryMetric" : {
+            "score" : 707.26469,
+            "scoreError" : 75.95494665755476,
+            "scoreConfidence" : [
+                631.3097433424452,
+                783.2196366575547
+            ],
+            "scorePercentiles" : {
+                "0.0" : 681.54685,
+                "50.0" : 704.7921,
+                "90.0" : 736.83745,
+                "95.0" : 736.83745,
+                "99.0" : 736.83745,
+                "99.9" : 736.83745,
+                "99.99" : 736.83745,
+                "99.999" : 736.83745,
+                "99.9999" : 736.83745,
+                "100.0" : 736.83745
+            },
+            "scoreUnit" : "ms/op",
+            "rawData" : [
+                [
+                    736.83745,
+                    703.99295,
+                    704.7921,
+                    709.1541,
+                    681.54685
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 59.70511381183072,
+            "scoreError" : 4.937434171668399,
+            "scoreConfidence" : [
+                54.76767964016232,
+                64.64254798349911
+            ],
+            "scorePercentiles" : {
+                "0.0" : 57.93358568479009,
+                "50.0" : 59.412020023557126,
+                "90.0" : 61.07863402840737,
+                "95.0" : 61.07863402840737,
+                "99.0" : 61.07863402840737,
+                "99.9" : 61.07863402840737,
+                "99.99" : 61.07863402840737,
+                "99.999" : 61.07863402840737,
+                "99.9999" : 61.07863402840737,
+                "100.0" : 61.07863402840737
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    60.833905346820806,
+                    59.412020023557126,
+                    59.267423975578254,
+                    57.93358568479009,
+                    61.07863402840737
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 66.04387979550924,
+            "scoreError" : 3.4084438252976863,
+            "scoreConfidence" : [
+                62.63543597021155,
+                69.45232362080692
+            ],
+            "scorePercentiles" : {
+                "0.0" : 65.37775192295263,
+                "50.0" : 65.8061328125,
+                "90.0" : 67.52957294660162,
+                "95.0" : 67.52957294660162,
+                "99.0" : 67.52957294660162,
+                "99.9" : 67.52957294660162,
+                "99.99" : 67.52957294660162,
+                "99.999" : 67.52957294660162,
+                "99.9999" : 67.52957294660162,
+                "100.0" : 67.52957294660162
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    67.52957294660162,
+                    66.11161877331936,
+                    65.37775192295263,
+                    65.39432252217259,
+                    65.8061328125
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 52.25167483765078,
+            "scoreError" : 2.159926777064509,
+            "scoreConfidence" : [
+                50.09174806058627,
+                54.411601614715295
+            ],
+            "scorePercentiles" : {
+                "0.0" : 51.45070264765784,
+                "50.0" : 52.26336423429489,
+                "90.0" : 52.7990871629023,
+                "95.0" : 52.7990871629023,
+                "99.0" : 52.7990871629023,
+                "99.9" : 52.7990871629023,
+                "99.99" : 52.7990871629023,
+                "99.999" : 52.7990871629023,
+                "99.9999" : 52.7990871629023,
+                "100.0" : 52.7990871629023
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    52.75204943679599,
+                    52.7990871629023,
+                    51.993170706602854,
+                    52.26336423429489,
+                    51.45070264765784
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 73.36428048798592,
+            "scoreError" : 1.2153356615128732,
+            "scoreConfidence" : [
+                72.14894482647306,
+                74.57961614949879
+            ],
+            "scorePercentiles" : {
+                "0.0" : 72.92958396423678,
+                "50.0" : 73.3265356443542,
+                "90.0" : 73.67949278530827,
+                "95.0" : 73.67949278530827,
+                "99.0" : 73.67949278530827,
+                "99.9" : 73.67949278530827,
+                "99.99" : 73.67949278530827,
+                "99.999" : 73.67949278530827,
+                "99.9999" : 73.67949278530827,
+                "100.0" : 73.67949278530827
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    73.3265356443542,
+                    73.22340024639466,
+                    73.67949278530827,
+                    72.92958396423678,
+                    73.6623897996357
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 60.262956500684105,
+            "scoreError" : 4.363079353349525,
+            "scoreConfidence" : [
+                55.89987714733458,
+                64.62603585403363
+            ],
+            "scorePercentiles" : {
+                "0.0" : 58.59524057971014,
+                "50.0" : 60.34318603121449,
+                "90.0" : 61.44630622942826,
+                "95.0" : 61.44630622942826,
+                "99.0" : 61.44630622942826,
+                "99.9" : 61.44630622942826,
+                "99.99" : 61.44630622942826,
+                "99.999" : 61.44630622942826,
+                "99.9999" : 61.44630622942826,
+                "100.0" : 61.44630622942826
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    59.8070853557476,
+                    61.44630622942826,
+                    58.59524057971014,
+                    60.34318603121449,
+                    61.122964307320025
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "astar",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 2951.5913290152266,
+            "scoreError" : 237.95247826646377,
+            "scoreConfidence" : [
+                2713.6388507487627,
+                3189.5438072816905
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2883.965811965812,
+                "50.0" : 2954.2187134502924,
+                "90.0" : 3046.474096385542,
+                "95.0" : 3046.474096385542,
+                "99.0" : 3046.474096385542,
+                "99.9" : 3046.474096385542,
+                "99.99" : 3046.474096385542,
+                "99.999" : 3046.474096385542,
+                "99.9999" : 3046.474096385542,
+                "100.0" : 3046.474096385542
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    3046.474096385542,
+                    2961.6023460410556,
+                    2911.6956772334293,
+                    2954.2187134502924,
+                    2883.965811965812
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 45357.67229249012,
+            "scoreError" : 4821.149631942352,
+            "scoreConfidence" : [
+                40536.522660547766,
+                50178.82192443247
+            ],
+            "scorePercentiles" : {
+                "0.0" : 44282.93913043478,
+                "50.0" : 45004.16086956522,
+                "90.0" : 47349.31363636364,
+                "95.0" : 47349.31363636364,
+                "99.0" : 47349.31363636364,
+                "99.9" : 47349.31363636364,
+                "99.99" : 47349.31363636364,
+                "99.999" : 47349.31363636364,
+                "99.9999" : 47349.31363636364,
+                "100.0" : 47349.31363636364
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    47349.31363636364,
+                    45004.16086956522,
+                    45733.63043478261,
+                    44282.93913043478,
+                    44418.31739130435
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 116332.06888888888,
+            "scoreError" : 12035.369515641343,
+            "scoreConfidence" : [
+                104296.69937324754,
+                128367.43840453023
+            ],
+            "scorePercentiles" : {
+                "0.0" : 113100.93333333333,
+                "50.0" : 116025.67777777778,
+                "90.0" : 120459.27777777778,
+                "95.0" : 120459.27777777778,
+                "99.0" : 120459.27777777778,
+                "99.9" : 120459.27777777778,
+                "99.99" : 120459.27777777778,
+                "99.999" : 120459.27777777778,
+                "99.9999" : 120459.27777777778,
+                "100.0" : 120459.27777777778
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    120459.27777777778,
+                    113100.93333333333,
+                    113656.64444444445,
+                    116025.67777777778,
+                    118417.8111111111
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 953.8837021065513,
+            "scoreError" : 32.392383966212606,
+            "scoreConfidence" : [
+                921.4913181403386,
+                986.2760860727639
+            ],
+            "scorePercentiles" : {
+                "0.0" : 945.567726847521,
+                "50.0" : 952.1937853107345,
+                "90.0" : 968.0803827751196,
+                "95.0" : 968.0803827751196,
+                "99.0" : 968.0803827751196,
+                "99.9" : 968.0803827751196,
+                "99.99" : 968.0803827751196,
+                "99.999" : 968.0803827751196,
+                "99.9999" : 968.0803827751196,
+                "100.0" : 968.0803827751196
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    968.0803827751196,
+                    952.1937853107345,
+                    951.187464655985,
+                    945.567726847521,
+                    952.3891509433962
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "island"
+        },
+        "primaryMetric" : {
+            "score" : 128736.67666666668,
+            "scoreError" : 19488.355559985077,
+            "scoreConfidence" : [
+                109248.3211066816,
+                148225.03222665176
+            ],
+            "scorePercentiles" : {
+                "0.0" : 123845.71111111112,
+                "50.0" : 126595.5375,
+                "90.0" : 134467.325,
+                "95.0" : 134467.325,
+                "99.0" : 134467.325,
+                "99.9" : 134467.325,
+                "99.99" : 134467.325,
+                "99.999" : 134467.325,
+                "99.9999" : 134467.325,
+                "100.0" : 134467.325
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    133874.2875,
+                    134467.325,
+                    124900.52222222222,
+                    126595.5375,
+                    123845.71111111112
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "deep-wild"
+        },
+        "primaryMetric" : {
+            "score" : 132219.47,
+            "scoreError" : 13077.674607829045,
+            "scoreConfidence" : [
+                119141.79539217096,
+                145297.14460782905
+            ],
+            "scorePercentiles" : {
+                "0.0" : 129202.9375,
+                "50.0" : 132060.85,
+                "90.0" : 137495.825,
+                "95.0" : 137495.825,
+                "99.0" : 137495.825,
+                "99.9" : 137495.825,
+                "99.99" : 137495.825,
+                "99.999" : 137495.825,
+                "99.9999" : 137495.825,
+                "100.0" : 137495.825
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    137495.825,
+                    133035.075,
+                    129302.6625,
+                    132060.85,
+                    129202.9375
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.PathfinderBenchmark.search",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "mode" : "uninformed",
+            "scenario" : "wilderness-escape"
+        },
+        "primaryMetric" : {
+            "score" : 2536.9739210187836,
+            "scoreError" : 152.5142176905024,
+            "scoreConfidence" : [
+                2384.459703328281,
+                2689.488138709286
+            ],
+            "scorePercentiles" : {
+                "0.0" : 2493.4851851851854,
+                "50.0" : 2528.5555,
+                "90.0" : 2595.818205128205,
+                "95.0" : 2595.818205128205,
+                "99.0" : 2595.818205128205,
+                "99.9" : 2595.818205128205,
+                "99.99" : 2595.818205128205,
+                "99.999" : 2595.818205128205,
+                "99.9999" : 2595.818205128205,
+                "100.0" : 2595.818205128205
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    2553.8296202531646,
+                    2493.4851851851854,
+                    2595.818205128205,
+                    2513.1810945273633,
+                    2528.5555
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.SearchHeuristicBenchmark.buildHeuristic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "scenario" : "lumbridge-barrows"
+        },
+        "primaryMetric" : {
+            "score" : 6.308532819467528,
+            "scoreError" : 0.3537082569903111,
+            "scoreConfidence" : [
+                5.954824562477217,
+                6.662241076457839
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.186092229000067,
+                "50.0" : 6.293617842644019,
+                "90.0" : 6.409852519718989,
+                "95.0" : 6.409852519718989,
+                "99.0" : 6.409852519718989,
+                "99.9" : 6.409852519718989,
+                "99.99" : 6.409852519718989,
+                "99.999" : 6.409852519718989,
+                "99.9999" : 6.409852519718989,
+                "100.0" : 6.409852519718989
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    6.409852519718989,
+                    6.293617842644019,
+                    6.388282593304339,
+                    6.186092229000067,
+                    6.264818912670225
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.SearchHeuristicBenchmark.buildHeuristic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "scenario" : "ge-shilo"
+        },
+        "primaryMetric" : {
+            "score" : 6.234510772499879,
+            "scoreError" : 0.3067597168489115,
+            "scoreConfidence" : [
+                5.927751055650968,
+                6.541270489348791
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.179494051990013,
+                "50.0" : 6.203092340642279,
+                "90.0" : 6.3753687864920305,
+                "95.0" : 6.3753687864920305,
+                "99.0" : 6.3753687864920305,
+                "99.9" : 6.3753687864920305,
+                "99.99" : 6.3753687864920305,
+                "99.999" : 6.3753687864920305,
+                "99.9999" : 6.3753687864920305,
+                "100.0" : 6.3753687864920305
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    6.203092340642279,
+                    6.202305130159043,
+                    6.21229355321603,
+                    6.3753687864920305,
+                    6.179494051990013
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    },
+    {
+        "jmhVersion" : "1.37",
+        "benchmark" : "gps.pathfinder.SearchHeuristicBenchmark.buildHeuristic",
+        "mode" : "avgt",
+        "threads" : 1,
+        "forks" : 1,
+        "jvm" : "C:\\tools\\jdk-21_windows-x64_bin\\jdk-21.0.7\\bin\\java.exe",
+        "jvmArgs" : [
+            "-Dfile.encoding=UTF-8",
+            "-Duser.country=US",
+            "-Duser.language=en",
+            "-Duser.variant"
+        ],
+        "jdkVersion" : "21.0.7",
+        "vmName" : "Java HotSpot(TM) 64-Bit Server VM",
+        "vmVersion" : "21.0.7+8-LTS-245",
+        "warmupIterations" : 3,
+        "warmupTime" : "1 s",
+        "warmupBatchSize" : 1,
+        "measurementIterations" : 5,
+        "measurementTime" : "1 s",
+        "measurementBatchSize" : 1,
+        "params" : {
+            "scenario" : "capture"
+        },
+        "primaryMetric" : {
+            "score" : 6.851806081689999,
+            "scoreError" : 0.9576056306235553,
+            "scoreConfidence" : [
+                5.894200451066443,
+                7.809411712313554
+            ],
+            "scorePercentiles" : {
+                "0.0" : 6.465461073705231,
+                "50.0" : 6.967309650957938,
+                "90.0" : 7.0470062156864115,
+                "95.0" : 7.0470062156864115,
+                "99.0" : 7.0470062156864115,
+                "99.9" : 7.0470062156864115,
+                "99.99" : 7.0470062156864115,
+                "99.999" : 7.0470062156864115,
+                "99.9999" : 7.0470062156864115,
+                "100.0" : 7.0470062156864115
+            },
+            "scoreUnit" : "us/op",
+            "rawData" : [
+                [
+                    7.0470062156864115,
+                    7.03763643206624,
+                    6.967309650957938,
+                    6.741617036034174,
+                    6.465461073705231
+                ]
+            ]
+        },
+        "secondaryMetrics" : {
+        }
+    }
+]
+
+

@@ -52,7 +52,7 @@ public class PathfinderBenchmark
 	{
 		config = BenchScenarios.everythingConfig();
 		start = BenchScenarios.start(scenario);
-		targets = BenchScenarios.targets(scenario);
+		targets = BenchScenarios.targets(scenario, config);
 		heuristic = "astar".equals(mode)
 			? SearchHeuristic.buildWithField(config, DistanceField.build(config, targets))
 			: null;

@@ -29,24 +29,34 @@ import gps.TeleportMethod;
 /**
  * Microbenchmark for the true end-to-end "find routes": one {@link AlternativeRoutesService}
  * generation, which builds the distance field once and runs the exclusion-chain + seed searches to
- * produce up to {@code maxRoutes} alternative routes by method. This is the actual cost of a panel
- * "find routes" click.
+ * produce a page of alternative routes by method. This is the actual cost of a panel "find routes"
+ * click, at the plugin's default page size and cost band (the route budget is the same with the
+ * panel shown or hidden, see RouteController.routeLimitFor).
  * <p>
  * The generation is asynchronous (own executor + seed pool); the benchmark awaits the terminal
  * {@code done} update on a latch, so the measured wall time is the generation's. The client-thread
- * bounce is run inline via a mock. {@code maxRoutes = 1} is the primary-only path (panel hidden);
- * {@code 10} is a full page. Output in ms.
+ * bounce is run inline via a mock. Output in ms.
  * <p>
- * The {@code cache} axis is the distance-field cache (plan step N4): a service reuses the field
- * across generations with the same target set and usable transports, so one long-lived service
- * fed the same query in a loop measures a WARM regeneration (the player walking toward a pinned
- * target: one guided search per route, single-digit milliseconds), not a first click. That is
- * what this benchmark silently became when the cache landed. {@code cold} builds a fresh service
- * per invocation, so every generation floods its field (the first click on a new target, where
- * the flood dominates); {@code warm} keeps one service per trial. The shared config's own caches
- * stay warm in both, as they do in the plugin.
+ * {@code scenario}: the six single-target queries, then the panel's "nearest bank" (a map-wide
+ * target set: no compact field, uninformed searches under the walk cap), "nearest bank and back"
+ * (round trips: a return search per route over a start-rooted field), a water pin (sea legs
+ * synthesized per generation) and a sealed target (the provably-unreachable short circuit).
  * <p>
- * Run: {@code ./gradlew -Pjmh jmh --args='GenerateBenchmark'}
+ * {@code mode}: {@code owned} is the plugin's default (inventory only, possession checked); the
+ * bench client carries nothing, so this is the no-items player, whose flood has no cheap teleport
+ * floor and runs widest. {@code everything} bypasses possession: every teleport usable, the widest
+ * transport fan-out.
+ * <p>
+ * {@code cache}: the distance-field cache (plan step N4). A service reuses the field across
+ * generations with the same target set and usable transports, so one long-lived service fed the
+ * same query in a loop measures a WARM regeneration (the player walking toward a pinned target:
+ * one guided search per route, single-digit milliseconds), not a first click. {@code cold} builds
+ * a fresh service per invocation, so every generation floods its field (the first click on a new
+ * target, where the flood dominates); {@code warm} keeps one service per trial. The shared
+ * config's own caches stay warm in both, as they do in the plugin.
+ * <p>
+ * Run: {@code ./gradlew -Pjmh jmh --args='GenerateBenchmark'}; narrow with
+ * {@code -p scenario=capture -p mode=owned -p cache=cold}.
  */
 @State(Scope.Benchmark)
 @BenchmarkMode(Mode.AverageTime)
@@ -56,14 +66,18 @@ import gps.TeleportMethod;
 @Fork(1)
 public class GenerateBenchmark
 {
-	// The production default from ShortestPathPlugin: cap each search at best-cost * this.
+	/** The plugin's defaults: routes per page (ShortestPathConfig.defaultRouteCount) ... */
+	private static final int ROUTES_PER_PAGE = 10;
+	/** ... and the cost band each search is capped at (RouteSession.DEFAULT_COST_MULTIPLE). */
 	private static final int COST_MULTIPLE = 3;
 
-	@Param({"lumbridge-barrows", "ge-shilo", "capture", "island", "deep-wild", "wilderness-escape"})
+	@Param({"lumbridge-barrows", "ge-shilo", "capture", "island", "deep-wild", "wilderness-escape",
+		"nearest-bank", "bank-and-back", "water-pin", "sealed"})
 	public String scenario;
 
-	@Param({"1", "10"})
-	public int maxRoutes;
+	/** owned: the plugin's default mode (inventory, possession checked); everything: all bypassed. */
+	@Param({"owned", "everything"})
+	public String mode;
 
 	/** cold: a fresh service (empty field cache) per invocation; warm: one service per trial. */
 	@Param({"cold", "warm"})
@@ -74,6 +88,8 @@ public class GenerateBenchmark
 	private AlternativeRoutesService service;
 	private int start;
 	private Set<Integer> targets;
+	private AlternativeRoutesMode routesMode;
+	private boolean roundTrip;
 
 	@Setup(Level.Trial)
 	public void setup()
@@ -87,7 +103,9 @@ public class GenerateBenchmark
 
 		config = BenchScenarios.everythingConfig();
 		start = BenchScenarios.start(scenario);
-		targets = BenchScenarios.targets(scenario);
+		targets = BenchScenarios.targets(scenario, config);
+		routesMode = "owned".equals(mode) ? AlternativeRoutesMode.OWNED_INVENTORY : AlternativeRoutesMode.ALL_EVERYTHING;
+		roundTrip = BenchScenarios.roundTrip(scenario);
 		if ("warm".equals(cache))
 		{
 			service = new AlternativeRoutesService(clientThread, config);
@@ -128,8 +146,8 @@ public class GenerateBenchmark
 	{
 		final CountDownLatch latch = new CountDownLatch(1);
 		final AtomicReference<List<RouteOption>> out = new AtomicReference<>();
-		service.generate(start, targets, Set.<TeleportMethod>of(), AlternativeRoutesMode.ALL_EVERYTHING,
-			maxRoutes, COST_MULTIPLE, false,
+		service.generate(start, targets, Set.<TeleportMethod>of(), routesMode, ROUTES_PER_PAGE, COST_MULTIPLE,
+			roundTrip,
 			(routes, catalog, unavailable, done) ->
 			{
 				if (done)
@@ -138,7 +156,7 @@ public class GenerateBenchmark
 					latch.countDown();
 				}
 			});
-		latch.await(30, TimeUnit.SECONDS);
+		latch.await(60, TimeUnit.SECONDS);
 		return out.get();
 	}
 }

@@ -41,7 +41,7 @@ public class SearchHeuristicBenchmark
 	public void setup()
 	{
 		config = BenchScenarios.everythingConfig();
-		field = DistanceField.build(config, BenchScenarios.targets(scenario));
+		field = DistanceField.build(config, BenchScenarios.targets(scenario, config));
 	}
 
 	@Benchmark

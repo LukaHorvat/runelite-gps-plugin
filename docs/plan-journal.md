@@ -1295,3 +1295,39 @@ generate numbers contradicting their own javadoc.
 runs on 11, so absolute numbers come from a different JIT than production.
 
 **Suite:** 814 tests, all green.
+
+### Step B2: benchmarks for the plugin's clicks, and a baseline (2026-09-12)
+
+**Red first:** none: JMH benchmarks, a comparison script and documentation. The script was
+smoke-tested on real JMH output (a run against itself compares clean; a perturbed copy is
+flagged), and the new scenarios were checked to produce pages before the baseline run.
+
+**Change:**
+
+- `GenerateBenchmark` measures the plugin's clicks. Its `maxRoutes` axis measured a limit-1
+  generation that production no longer runs (the route budget is the same with the panel shown
+  or hidden, issue #18); a `mode` axis replaces it, `owned` being the plugin's default mode,
+  which no benchmark covered. Four scenarios join the six: the panel's "nearest bank" (a
+  map-wide target set), "nearest bank and back" (round trips), a water pin and a sealed target.
+- The benchmark fixture used a stub config whose every setting was false, null or zero: no
+  minigame teleports, zero-cost consumable teleports, a null item mode. It now uses the plugin's
+  default settings (the implementing config the tests use). On Lumbridge to Barrows the stub
+  found six single-method routes over a 230 ms field; the defaults fill a page of ten with
+  multi-method chains over a 380 ms field, which is why the cold numbers roughly doubled against
+  the previous run while the heuristic build and the guided search got cheaper.
+- `ClassicPathfinderBenchmark` is deleted: nothing outside the service constructs a search any
+  more, so it measured a path the plugin does not run (its uninformed reference lives on as
+  PathfinderBenchmark's `uninformed` mode).
+- `AvailabilityBenchmark` measured the rebuild with no exclusions, which hands the base lists
+  back untouched (0 us/op). It now excludes one method, alternating between two: the per-search
+  cost every chain iteration after the first pays.
+- `docs/benchmarks/baseline.json` is a full run's output; `scripts/bench_compare.py` compares a
+  fresh run against it and marks deltas beyond a threshold; `docs/Benchmarks.md` documents the
+  set, how to run it (on JDK 11 too, by running Gradle on it) and the baseline with a reading.
+
+**Measured** (the baseline, cold, owned mode): lumbridge-barrows 355 ms, capture 98 ms, island
+602 ms, wilderness-escape 816 ms, nearest-bank 1045 ms, bank-and-back 1386 ms, water-pin 412 ms,
+sealed 708 ms; warm 16 to 78 ms on the common queries. Full flood 271 ms, guided search 52 to
+73 us, refresh 3.7 ms, rebuild with an exclusion 230 us.
+
+**Suite:** main code untouched (benchmarks, script and docs only).
