@@ -108,50 +108,29 @@ separate them.
 
 ### The rest
 
-| SailingSeaBenchmark.seaTrackLeg | Params | Score | Unit |
+| Benchmark | Params | Score | Unit |
 |---|---|---:|---|
-| |  | 52.4 | ms/op |
-
-| SailingSeaBenchmark.wetFloodCoastal | Params | Score | Unit |
-|---|---|---:|---|
-| |  | 21.0 | ms/op |
-
-| SailingSeaBenchmark.wetFloodMidOcean | Params | Score | Unit |
-|---|---|---:|---|
-| |  | 41.0 | ms/op |
-
-| AvailabilityBenchmark.rebuildWithExclusion | Params | Score | Unit |
-|---|---|---:|---|
-| |  | 230 | us/op |
-
-| AvailabilityBenchmark.refresh | Params | Score | Unit |
-|---|---|---:|---|
-| |  | 3659 | us/op |
-
-| DistanceFieldBenchmark.build | Params | Score | Unit |
-|---|---|---:|---|
-| | costMultiple=0 scenario=single | 270662 | us/op |
-| | costMultiple=0 scenario=multi | 274007 | us/op |
-| | costMultiple=3 scenario=single | 8840 | us/op |
-| | costMultiple=3 scenario=multi | 26689 | us/op |
-
-| PathfinderBenchmark.search | Params | Score | Unit |
-|---|---|---:|---|
-| | mode=astar scenario=lumbridge-barrows | 59.7 | us/op |
-| | mode=astar scenario=ge-shilo | 66.0 | us/op |
-| | mode=astar scenario=capture | 52.3 | us/op |
-| | mode=astar scenario=island | 73.4 | us/op |
-| | mode=astar scenario=deep-wild | 60.3 | us/op |
-| | mode=astar scenario=wilderness-escape | 2952 | us/op |
-| | mode=uninformed scenario=lumbridge-barrows | 45358 | us/op |
-| | mode=uninformed scenario=ge-shilo | 116332 | us/op |
-| | mode=uninformed scenario=capture | 954 | us/op |
-| | mode=uninformed scenario=island | 128737 | us/op |
-| | mode=uninformed scenario=deep-wild | 132219 | us/op |
-| | mode=uninformed scenario=wilderness-escape | 2537 | us/op |
-
-| SearchHeuristicBenchmark.buildHeuristic | Params | Score | Unit |
-|---|---|---:|---|
-| | scenario=lumbridge-barrows | 6.31 | us/op |
-| | scenario=ge-shilo | 6.23 | us/op |
-| | scenario=capture | 6.85 | us/op |
+| SailingSeaBenchmark.seaTrackLeg |  | 52.4 | ms/op |
+| SailingSeaBenchmark.wetFloodCoastal |  | 21.0 | ms/op |
+| SailingSeaBenchmark.wetFloodMidOcean |  | 41.0 | ms/op |
+| AvailabilityBenchmark.rebuildWithExclusion |  | 230 | us/op |
+| AvailabilityBenchmark.refresh |  | 3659 | us/op |
+| DistanceFieldBenchmark.build | costMultiple=0 scenario=single | 270662 | us/op |
+|  | costMultiple=0 scenario=multi | 274007 | us/op |
+|  | costMultiple=3 scenario=single | 8840 | us/op |
+|  | costMultiple=3 scenario=multi | 26689 | us/op |
+| PathfinderBenchmark.search | mode=astar scenario=lumbridge-barrows | 59.7 | us/op |
+|  | mode=astar scenario=ge-shilo | 66.0 | us/op |
+|  | mode=astar scenario=capture | 52.3 | us/op |
+|  | mode=astar scenario=island | 73.4 | us/op |
+|  | mode=astar scenario=deep-wild | 60.3 | us/op |
+|  | mode=astar scenario=wilderness-escape | 2952 | us/op |
+|  | mode=uninformed scenario=lumbridge-barrows | 45358 | us/op |
+|  | mode=uninformed scenario=ge-shilo | 116332 | us/op |
+|  | mode=uninformed scenario=capture | 954 | us/op |
+|  | mode=uninformed scenario=island | 128737 | us/op |
+|  | mode=uninformed scenario=deep-wild | 132219 | us/op |
+|  | mode=uninformed scenario=wilderness-escape | 2537 | us/op |
+| SearchHeuristicBenchmark.buildHeuristic | scenario=lumbridge-barrows | 6.31 | us/op |
+|  | scenario=ge-shilo | 6.23 | us/op |
+|  | scenario=capture | 6.85 | us/op |
