@@ -19,13 +19,16 @@ import net.runelite.client.util.Text;
 
 /**
  * The right-click menu entries (plan step L22, out of the plugin class): "Set GPS Target" on a
- * shift-clicked tile and on the world map, "Clear Path" on the path, the map, the minimap and
- * the floating-map controls, and "Find closest" on a world-map icon whose kind GPS knows. A
- * click hands the pick to the plugin.
+ * shift-clicked tile and on the world map, "Clear Path" on the path, the map, the minimap, the
+ * floating-map controls and the directions overlay, "Dismiss Arrival" on the overlay's lingering
+ * "Arrived!" panel, and "Find closest" on a world-map icon whose kind GPS knows. A click hands
+ * the pick to the plugin.
  */
 final class MapMenu
 {
 	static final String CLEAR = "Clear";
+	static final String DISMISS = "Dismiss";
+	static final String ARRIVAL = ColorUtil.wrapWithColorTag("Arrival", JagexColors.MENU_TARGET);
 	static final String PATH = ColorUtil.wrapWithColorTag("Path", JagexColors.MENU_TARGET);
 	static final String SET = "Set";
 	static final String FIND_CLOSEST = "Find closest";
@@ -54,6 +57,7 @@ final class MapMenu
 
 	void onMenuEntryAdded(MenuEntryAdded event)
 	{
+		addDirectionsEntry(event);
 		if (client.isKeyPressed(KeyCode.KC_SHIFT) && event.getType() == MenuAction.WALK.getId())
 		{
 			addMenuEntry(event, SET, TARGET, 1);
@@ -106,6 +110,30 @@ final class MapMenu
 		}
 	}
 
+	/**
+	 * The directions overlay's own entry, on a plain right-click anywhere on the panel (RuneLite's
+	 * built-in overlay menu needs shift): "Clear Path" while a route is shown or being found,
+	 * "Dismiss Arrival" while the "Arrived!" panel lingers. The renderer zeroes the bounds of an
+	 * overlay that drew nothing, so a hidden panel never matches.
+	 */
+	void addDirectionsEntry(MenuEntryAdded event)
+	{
+		RouteDirectionsOverlay directions = plugin.routeDirectionsOverlay();
+		Point mouse = client.getMouseCanvasPosition();
+		if (directions == null || !directions.getBounds().contains(mouse.getX(), mouse.getY()))
+		{
+			return;
+		}
+		if (directions.isArrivalShowing())
+		{
+			addMenuEntry(event, DISMISS, ARRIVAL, 0);
+		}
+		else if (plugin.hasPathTargets())
+		{
+			addMenuEntry(event, CLEAR, PATH, 0);
+		}
+	}
+
 	private void onMenuOptionClicked(MenuEntry entry)
 	{
 		if (entry.getOption().equals(SET) && entry.getTarget().equals(TARGET))
@@ -114,6 +142,11 @@ final class MapMenu
 		}
 		else if (entry.getOption().equals(CLEAR) && entry.getTarget().equals(PATH))
 		{
+			plugin.clearPinnedTarget();
+		}
+		else if (entry.getOption().equals(DISMISS) && entry.getTarget().equals(ARRIVAL))
+		{
+			plugin.routeDirectionsOverlay().dismissArrival();
 			plugin.clearPinnedTarget();
 		}
 		else if (entry.getOption().equals(FIND_CLOSEST))

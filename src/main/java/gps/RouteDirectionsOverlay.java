@@ -674,6 +674,18 @@ public class RouteDirectionsOverlay extends OverlayPanel
 		return true;
 	}
 
+	/** Hides the lingering "Arrived!" panel (the right-click menu's "Dismiss Arrival"). */
+	public void dismissArrival()
+	{
+		arrivalShowing = false;
+	}
+
+	/** Whether the lingering "Arrived!" panel is what the overlay currently shows. */
+	public boolean isArrivalShowing()
+	{
+		return arrivalShowing;
+	}
+
 	/**
 	 * Latches the "Arrived!" panel. Called by the plugin the moment it clears the target on arrival,
 	 * so arrival is shown even when the near-end proximity stamp never happened — e.g. a destination
